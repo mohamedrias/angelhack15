@@ -13,8 +13,33 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+  font-family: 'regencielight';
+  src: url('/assets/regencielight.eot');
+  src: url('/assets/regencielight.eot?#iefix') format('embedded-opentype'),
+  url('/assets/regencielight.woff2') format('woff2'),
+  url('/assets/regencielight.woff') format('woff'),
+  url('/assets/regencielight.ttf') format('truetype'),
+  url('/assets/regencielight.svg#regencielight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'dodge';
+  src: url('/assets/dodge.eot');
+  src: url('/assets/dodge.eot?#iefix') format('embedded-opentype'),
+  url('/assets/dodge.woff2') format('woff2'),
+  url('/assets/dodge.woff') format('woff'),
+  url('/assets/dodge.ttf') format('truetype'),
+  url('/assets/dodge.svg#dodgedodge') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
 body{
   background-image:url('/assets/bg.png');
+  font-family: 'Montserrat', sans-serif;
 }
 .navbar-default{
   opacity:0.5 !important;
@@ -30,4 +55,23 @@ footer{
   border-radius:5px;
   opacity:0.5 !important;
   color:black;
+}
+/*.title{
+border-bottom-width:2px;
+border-bottom-color:black;
+border-bottom-style:solid;
+padding:2px;
+}*/
+input[type="email"],input[type="password"],input[type="email"]:focus,input[type="password"]:focus {
+  border-bottom-width:2px;
+  border-top:none;
+  border-right:0px;
+  border-left:0px;
+  padding:0px;
+  box-shadow:none;
+  border-radius:0px;
+  background-color:none;
+}
+.form-control:focus{
+  border-bottom-color:#FF363D !important;
 }
