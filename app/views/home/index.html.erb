@@ -1,194 +1,28 @@
 <%if user_signed_in?%>
-<center><h3 class="content">Choose your travel destintation</h3></center>
-<center>
-  <input type="text" name="destination" placeholder="Choose your destination" class="form-control" autofocus="true"></input>
-  <br>
-  <button class="btn btn-orange"><i class="fa fa-map-marker"></i> Give me locations</button>
-</center>
-<center><h3 class="content">List of available locations</h3></center>
-<ul class="grid effect-2" id="grid">
-  <li>
-    <div class="suggested">
-      <center>
-        <p class="title">
-          Marina beach
-        </p>
-        <hr></hr>
-        <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-        <p class="place-desc">
-          2nd Longest beach in the world
-          </p>
-          <br>
-          <input type="checkbox"> Add to itenary
-        <center>
-
-        </div>
-      </li>
-      <li>
-        <div class="suggested-2">
-          <center><p class="title">Marina beach
-          </p>
-          <hr></hr>
-          <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-          <p class="place-desc">
-            2nd Longest beach in the world
-            </p>
-          <input type="checkbox"> Add to itenary
-          <center>
-          </div>
-        </li>
-        <li>
-          <div class="suggested">
-            <center><p class="title">Marina beach
-            </p>
-            <hr></hr>
-            <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-            <p class="place-desc">
-              2nd Longest beach in the world
-              </p>
-          <input type="checkbox"> Add to itenary
-
-            <center>
-            </div>
-          </li>
-          <li>
-            <div class="suggested">
-              <center>
-                <p class="title">
-                  Marina beach
-                </p>
-                <hr></hr>
-                <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                <p class="place-desc">
-                  2nd Longest beach in the world
-                </p>
-                <center>
-                </div>
-              </li>
-              <li>
-                <div class="suggested-2">
-                  <center><p class="title">Marina beach
-                  </p>
-                  <hr></hr>
-
-                  <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                  <p class="place-desc">
-                    2nd Longest beach in the world
-                  </p>
-                  <center>
-                  </div>
-                </li>
-                <li>
-                  <div class="suggested">
-                    <center><p class="title">Marina beach
-                    </p>
-                    <hr></hr>
-
-                    <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                    <p class="place-desc">
-                      2nd Longest beach in the world
-                    </p>
-                    <center>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="suggested">
-                      <center>
-                        <p class="title">
-                          Marina beach
-                        </p>
-                        <hr></hr>
-                        <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                        <p class="place-desc">
-                          2nd Longest beach in the world
-                        </p>
-                        <center>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="suggested-2">
-                          <center><p class="title">Marina beach
-                          </p>
-                          <hr></hr>
-
-                          <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                          <p class="place-desc">
-                            2nd Longest beach in the world
-                          </p>
-                          <center>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="suggested">
-                            <center><p class="title">Marina beach
-                            </p>
-                            <hr></hr>
-
-                            <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                            <p class="place-desc">
-                              2nd Longest beach in the world
-                            </p>
-                            <center>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="suggested">
-                              <center>
-                                <p class="title">
-                                  Marina beach
-                                </p>
-                                <hr></hr>
-                                <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                                <p class="place-desc">
-                                  2nd Longest beach in the world
-                                </p>
-                                <center>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="suggested-2">
-                                  <center><p class="title">Marina beach
-                                  </p>
-                                  <hr></hr>
-
-                                  <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                                  <p class="place-desc">
-                                    2nd Longest beach in the world
-                                  </p>
-                                  <center>
-                                  </div>
-                                </li>
-                                <li>
-                                  <div class="suggested">
-                                    <center><p class="title">Marina beach
-                                    </p>
-                                    <hr></hr>
-
-                                    <img src="http://images.mapsofindia.com/my-india/marina-beach-chennai.jpg" width="50px" height="50px"> </img>
-                                    <p class="place-desc">
-                                      2nd Longest beach in the world
-                                    </p>
-                                    <center>
-                                    </div>
-                                  </li>
-                                </ul>
-
-                                <center><h3 class="content">The schedule</h3></center>
-                                <center><p> map again again with photos</p></center>
-                                <%else%>
-                                <center> 
-                                  <div class="col-md-4">
-                                    <p class="desc">
-                                      <span class="fa fa-fighter-jet"></span> Travel
-                                    </p>
-                                  </div>
-                                  <div class="col-md-4">    
-                                    <p class="desc">
-                                      <span class="fa fa-bullhorn"></span> Fun</p>
-                                    </div>
-                                    <div class="col-md-4">    
-                                      <p class="desc">
-                                        <span class="fa fa-cloud"></span> Memories</p>
-                                      </div>
-                                    </center>
-                                    <%end%>
+  <center><h3 class="content">Choose your travel destintation</h3></center>
+  <center>
+    <input type="text" name="destination" placeholder="Choose your destination" class="form-control" autofocus="true"></input>
+    <br>
+    <button class="btn btn-orange" id="location"><i class="fa fa-map-marker"></i> Give me locations</button>
+  </center>
+  <div id="fourloc">
+  </div>
+  <center><h3 class="content">The schedule</h3></center>
+  <center><p> map again again with photos</p></center>
+<%else%>
+  <center> 
+    <div class="col-md-4">
+      <p class="desc">
+      <span class="fa fa-fighter-jet"></span> Travel
+      </p>
+    </div>
+    <div class="col-md-4">    
+      <p class="desc">
+      <span class="fa fa-bullhorn"></span> Fun</p>
+    </div>
+    <div class="col-md-4">    
+      <p class="desc">
+      <span class="fa fa-cloud"></span> Memories</p>
+    </div>
+  </center>
+<%end%>

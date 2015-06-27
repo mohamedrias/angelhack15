@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
-  get 'home/locations'
+  get '/locations'=>"home#locations"
 end
