@@ -34,6 +34,7 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "application" %>
   </head>
   <body>
@@ -50,9 +51,28 @@
         <a class="navbar-brand" href="#">Angelhack15</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "About us", root_path  %></li>
-            <li><%= link_to "Sign up",new_user_registration_path  %></li>
-            <li><%= link_to "Sign in",new_user_session_path  %></li>
+            <li>
+            <%=link_to  root_path  do%>
+              <i class="fa fa-users"></i>  About us
+            <%end%>
+              </li>
+            <li>
+            <% if user_signed_in?%>
+              <%=link_to destroy_user_session_path,:method=>:delete do%>
+                <i class="fa fa-sign-out"></i> Sign out
+              <%end%>
+            <%else%>
+            <li>
+            <%=link_to new_user_registration_path  do%>
+              <i class="fa fa-user-plus"></i> Sign up
+            <%end%>
+            </li>
+
+            <%= link_to new_user_session_path  do%>
+              <i class="fa fa-sign-in"></i> Sign in
+            <%end%>
+          <%end%>
+            </li>
           </ul>
         </div>
       </div>
