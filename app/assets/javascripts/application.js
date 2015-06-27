@@ -13,5 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require masonry.pkgd.min
+//= require imagesloaded
+//= require classie
+//= require AnimOnScroll
 //= require turbolinks
 //= require_tree .
+$(document).ready(function(){
+  new AnimOnScroll( document.getElementById('grid'), {
+    minDuration : 0.4,
+      maxDuration : 0.7,
+      viewportFactor : 0.2
+  } );
+});
