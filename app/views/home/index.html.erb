@@ -1,2 +1,24 @@
-<center><h1>About us</h1></center>
-<p class="content">To fill</p>
+<%if user_signed_in?%>
+  <center><h3 class="content">Choose your travel destintation</h3></center>
+  <center><p>Map</p></center>
+  <center><h3 class="content">List of available locations</h3></center>
+  <center><p>Map again</p></center>
+  <center><h3 class="content">The schedule</h3></center>
+  <center><p> map again again with photos</p></center>
+<%else%>
+  <center> 
+    <div class="col-md-4">
+      <p class="desc">
+      <span class="fa fa-fighter-jet"></span> Travel
+    </p>
+  </div>
+  <div class="col-md-4">    
+    <p class="desc">
+    <span class="fa fa-bullhorn"></span> Fun</p>
+    </div>
+      <div class="col-md-4">    
+        <p class="desc">
+        <span class="fa fa-cloud"></span> Memories</p>
+      </div>
+      </center>
+    <%end%>
